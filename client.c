@@ -13,6 +13,7 @@ int main()
     }
 
     //for(int n=100000; n<1000000;n+=50000){
+    printf("Sorting in progress....\n");
     for(int n=1000; n<3000;n+=1000){
 
         int *arr = generate_array(n);
@@ -51,7 +52,6 @@ int main()
         fprintf(compare,"\nn=%d \n",n);
         fprintf(timeTaken,"\nn=%d \n",n);
         // printf("Selection, Bubble, Quick, Merge\n");
-        printf("Sorting in progress....\n");
         for (int i = 0; i < 4; i++)
         {
             //printf("%lf\t%ld\n", cpu_time_used[i], comps[i]);
