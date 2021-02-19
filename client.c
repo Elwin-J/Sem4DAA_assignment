@@ -14,7 +14,7 @@ int main()
 
     //for(int n=100000; n<=1000000;n+=50000){
     printf("Sorting in progress....\n");
-    for(int n=1000; n<3000;n+=1000){
+    for(int n = 100000; n <= 1000000;n += 50000){
 
         printf("n is currently %d\n", n);
 
