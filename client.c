@@ -3,7 +3,7 @@
 int main()
 {
     FILE *compare, *timeTaken;
-    compare = fopen("SizeVsNumberOfComparisions.txt", "w");
+    compare = fopen("SizeVsNumberOfComparisons.txt", "w");
     timeTaken = fopen("SizeVsNumberOfExecutionTime.txt", "w");
 
     if(compare == NULL || timeTaken == NULL) 
