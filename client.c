@@ -12,9 +12,11 @@ int main()
         exit(1);
     }
 
-    //for(int n=100000; n<1000000;n+=50000){
+    //for(int n=100000; n<=1000000;n+=50000){
     printf("Sorting in progress....\n");
     for(int n=1000; n<3000;n+=1000){
+
+        printf("n is currently %d\n", n);
 
         int *arr = generate_array(n);
         double cpu_time_used[4];
@@ -59,6 +61,8 @@ int main()
             fprintf(compare,"%ld \n", comps[i]);
             fprintf(timeTaken,"%lf \n",cpu_time_used[i]);
         }
+
+        printf("Sorting for n = %d done\n\n", n);
     }
     fclose(compare);
     fclose(timeTaken);
